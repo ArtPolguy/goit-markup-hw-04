@@ -130,14 +130,24 @@ button {
 }
 .contact-header {
   display: flex;
+  align-items: flex-end;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-white-theme);
 }
+.contact-item-icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color-white-theme);
+}
+.contact-item:hover .contact-item-icon,
+.contact-item:focus .contact-item-icon {
+  fill: var(--accent-color);
+}
+
 .contact-item-list:last-child {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .contact-item {
   color: inherit;
